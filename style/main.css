@@ -1,0 +1,395 @@
+@charset "UTF-8";
+@media (max-width: 768px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100% !important;
+  }
+  .container .text {
+    text-align: center;
+    max-width: 80% !important;
+  }
+
+  .landing::before {
+    left: -50% !important;
+  }
+}
+@media (max-width: 500px) {
+  .landing::after {
+    display: none !important;
+  }
+}
+@media (max-width: 425px) {
+  .landing::before {
+    left: -80% !important;
+  }
+}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+@media (min-width: 767px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 800px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 900px;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
+.landing::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 90%;
+  left: -15%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e942ff), to(#8838ff));
+  background: linear-gradient(180deg, #e942ff, #8838ff);
+  z-index: -5;
+  border-bottom-left-radius: 250px;
+  border-bottom-right-radius: 250px;
+}
+.landing::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 6px;
+  width: 300px;
+  height: 70%;
+  border-top-right-radius: 150px;
+  border-top-left-radius: 150px;
+  background-color: #fef8ff;
+  z-index: -5;
+}
+.landing .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 80px;
+  gap: 15%;
+}
+.landing .container .mobile {
+  width: 300px;
+  height: 605px;
+  position: relative;
+  border: white solid 10px;
+  background-color: #f5f3f7;
+  border-radius: 30px;
+  -webkit-box-shadow: #00000078 7px 7px 20px 0px;
+          box-shadow: #00000078 7px 7px 20px 0px;
+}
+.landing .container .mobile::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: white;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  -webkit-box-shadow: #0000001f 1px 1px 1px 0px;
+          box-shadow: #0000001f 1px 1px 1px 0px;
+  z-index: 1;
+}
+.landing .container .mobile .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  height: 80px;
+  background: -webkit-gradient(linear, right top, left top, from(#e942ff), to(#8838ff));
+  background: linear-gradient(270deg, #e942ff, #8838ff);
+  border-radius: 20px;
+  position: relative;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.landing .container .mobile .head::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  font-weight: 900;
+  color: white;
+  left: 15px;
+  bottom: 20px;
+}
+.landing .container .mobile .head::after {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  font-weight: 900;
+  color: white;
+  right: 15px;
+  bottom: 20px;
+}
+.landing .container .mobile .head .image {
+  width: 35px;
+  height: 35px;
+  border: white solid 2px;
+  border-radius: 50%;
+  margin: 25px 0 0 30px;
+  overflow: hidden;
+}
+.landing .container .mobile .head .image img {
+  width: 100%;
+}
+.landing .container .mobile .head .name .nam {
+  font-family: "Rubik", sans-serif;
+  font-size: 17px;
+  color: white;
+  font-weight: 500;
+  margin-top: 35px;
+  margin-bottom: 0;
+}
+.landing .container .mobile .head .name .state {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: "Rubik", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  color: #d89eff;
+}
+.landing .container .mobile .from1 {
+  background-color: #c6cacd;
+  width: 57%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 12px;
+}
+.landing .container .mobile .from1 p {
+  font-family: "Rubik", sans-serif;
+  color: #9241c8;
+  font-size: 10px;
+  margin: 0px;
+}
+.landing .container .mobile .from2 {
+  background-color: #c6cacd;
+  width: 57%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 12px;
+}
+.landing .container .mobile .from2 p {
+  font-family: "Rubik", sans-serif;
+  color: #9241c8;
+  font-size: 10px;
+  margin: 0px;
+}
+.landing .container .mobile .photos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.landing .container .mobile .photos .photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.landing .container .mobile .photos .photo img {
+  max-width: 100%;
+}
+.landing .container .mobile .to1 {
+  background-color: white;
+  width: 65%;
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 12px;
+  position: relative;
+  left: 27%;
+  border-bottom-right-radius: 5px;
+}
+.landing .container .mobile .to1 p {
+  font-family: "Rubik", sans-serif;
+  color: #9241c8;
+  font-size: 10px;
+  margin: 0px;
+}
+.landing .container .mobile .to2 {
+  background-color: white;
+  width: 65%;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 12px;
+  position: relative;
+  left: 27%;
+  border-bottom-right-radius: 5px;
+}
+.landing .container .mobile .to2 p {
+  font-family: "Rubik", sans-serif;
+  color: #9241c8;
+  font-size: 10px;
+  margin: 0px;
+}
+.landing .container .mobile .from3 {
+  background-color: #c6cacd;
+  width: 57%;
+  padding: 10px;
+  margin: 15px 10px;
+  border-radius: 12px;
+}
+.landing .container .mobile .from3 p {
+  font-family: "Rubik", sans-serif;
+  color: #9241c8;
+  font-size: 10px;
+  margin: 0px;
+}
+.landing .container .mobile .ofer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+  background-color: #c6cacd;
+  width: 65%;
+  margin: 10px;
+  border-radius: 12px;
+  background: -webkit-gradient(linear, left top, right top, from(#e942ff), to(#8838ff));
+  background: linear-gradient(90deg, #e942ff, #8838ff);
+  border-bottom-left-radius: 5px;
+}
+.landing .container .mobile .ofer .title {
+  font-family: "Rubik", sans-serif;
+}
+.landing .container .mobile .ofer .title label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  font-size: 10px;
+}
+.landing .container .mobile .ofer .title label .box {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  border: 2px white solid;
+  border-radius: 50%;
+}
+.landing .container .mobile .ofer .title label .box::before {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  top: 1px;
+  left: 1px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+.landing .container .mobile .ofer .title label input:checked + .box::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.landing .container .mobile .ofer .price2 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  color: white;
+}
+.landing .container .mobile .mass {
+  width: 100%;
+  position: relative;
+}
+.landing .container .mobile .mass .message {
+  font-family: "Rubik", sans-serif;
+  padding: 5px 15px;
+  padding-right: 50px;
+  width: 270px;
+  height: 35px;
+  margin: 0px 5px;
+  border-color: transparent;
+  color: #d89eff;
+  position: relative;
+  bottom: -10px;
+  font-size: 10px;
+  color: #a39daa;
+  border-radius: 25px;
+}
+.landing .container .mobile .mass::before {
+  content: "";
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  font-weight: 900;
+  font-weight: 900;
+  color: #3e2753;
+  left: 86%;
+  top: 39%;
+  z-index: 5;
+  font-size: 25px;
+}
+.landing .container .text {
+  max-width: 55%;
+}
+.landing .container .text h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  color: #3e2753;
+}
+.landing .container .text p {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+  color: #a39daa;
+}

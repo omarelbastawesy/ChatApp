@@ -1,0 +1,25 @@
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    max-width: 100% !important;
+    .text {
+      text-align: center;
+      max-width: 80% !important;
+    }
+  }
+  .landing::before {
+    left: -50% !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .landing::after {
+    display: none !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .landing::before {
+    left: -80% !important;
+  }
+}

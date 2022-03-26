@@ -1,0 +1,331 @@
+// start global rules
+@use "mobile.scss";
+
+$font: "Rubik", sans-serif;
+$gradient-a: hsl(293, 100%, 63%);
+$gradient-b: hsl(264, 100%, 61%);
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  @media (min-width: 767px) {
+    max-width: 750px;
+  }
+  @media (max-width: 768px) {
+    max-width: 750px;
+  }
+  @media (min-width: 992px) {
+    max-width: 800px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 900px;
+  }
+  @media (min-width: 1440px) {
+    max-width: 1000px;
+  }
+}
+
+// start style
+.landing {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 90%;
+    left: -15%;
+    background: linear-gradient(180deg, $gradient-a, $gradient-b);
+    z-index: -5;
+    border-bottom-left-radius: 250px;
+    border-bottom-right-radius: 250px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 6px;
+    width: 300px;
+    height: 70%;
+    border-top-right-radius: 150px;
+    border-top-left-radius: 150px;
+    background-color: #fef8ff;
+    z-index: -5;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 80px;
+    gap: 15%;
+    .mobile {
+      width: 300px;
+      height: 605px;
+      position: relative;
+      border: white solid 10px;
+      background-color: hsl(270, 20%, 96%);
+      border-radius: 30px;
+      box-shadow: #00000078 7px 7px 20px 0px;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        box-shadow: #0000001f 1px 1px 1px 0px;
+        z-index: 1;
+      }
+      .head {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+        height: 80px;
+        background: linear-gradient(270deg, $gradient-a, $gradient-b);
+        border-radius: 20px;
+        position: relative;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        &::before {
+          content: "\f053";
+          font-family: "Font Awesome 6 Free";
+          position: absolute;
+          font-weight: 900;
+          color: white;
+          left: 15px;
+          bottom: 20px;
+        }
+        &::after {
+          content: "\f142";
+          font-family: "Font Awesome 6 Free";
+          position: absolute;
+          font-weight: 900;
+          color: white;
+          right: 15px;
+          bottom: 20px;
+        }
+        .image {
+          width: 35px;
+          height: 35px;
+          border: white solid 2px;
+          border-radius: 50%;
+          margin: 25px 0 0 30px;
+          overflow: hidden;
+          img {
+            width: 100%;
+          }
+        }
+        .name {
+          .nam {
+            font-family: $font;
+            font-size: 17px;
+            color: white;
+            font-weight: 500;
+            margin-top: 35px;
+            margin-bottom: 0;
+          }
+          .state {
+            margin-top: 0;
+            margin-bottom: 16px;
+            font-family: $font;
+            font-size: 10px;
+            font-weight: 500;
+            color: hsl(276, 100%, 81%);
+          }
+        }
+      }
+      .from1 {
+        background-color: hsl(206, 6%, 79%);
+        width: 57%;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 12px;
+        p {
+          font-family: $font;
+          color: hsl(276, 55%, 52%);
+          font-size: 10px;
+          margin: 0px;
+        }
+      }
+      .from2 {
+        background-color: hsl(206, 6%, 79%);
+        width: 57%;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 12px;
+        p {
+          font-family: $font;
+          color: hsl(276, 55%, 52%);
+          font-size: 10px;
+          margin: 0px;
+        }
+      }
+      .photos {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        .photo {
+          width: 50px;
+          height: 50px;
+          border-radius: 10px;
+          overflow: hidden;
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+      .to1 {
+        background-color: white;
+        width: 65%;
+        padding: 10px;
+        margin: 0 10px;
+        border-radius: 12px;
+        position: relative;
+        left: 27%;
+        border-bottom-right-radius: 5px;
+        p {
+          font-family: $font;
+          color: hsl(276, 55%, 52%);
+          font-size: 10px;
+          margin: 0px;
+        }
+      }
+      .to2 {
+        background-color: white;
+        width: 65%;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 12px;
+        position: relative;
+        left: 27%;
+        border-bottom-right-radius: 5px;
+        p {
+          font-family: $font;
+          color: hsl(276, 55%, 52%);
+          font-size: 10px;
+          margin: 0px;
+        }
+      }
+      .from3 {
+        background-color: hsl(206, 6%, 79%);
+        width: 57%;
+        padding: 10px;
+        margin: 15px 10px;
+        border-radius: 12px;
+        p {
+          font-family: $font;
+          color: hsl(276, 55%, 52%);
+          font-size: 10px;
+          margin: 0px;
+        }
+      }
+      .ofer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: hsl(206, 6%, 79%);
+        width: 65%;
+        margin: 10px;
+        border-radius: 12px;
+        background: linear-gradient(90deg, $gradient-a, $gradient-b);
+        border-bottom-left-radius: 5px;
+        .title {
+          font-family: $font;
+          label {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 10px;
+            .box {
+              position: relative;
+              width: 14px;
+              height: 14px;
+              border: 2px white solid;
+              border-radius: 50%;
+              &::before {
+                position: absolute;
+                content: "";
+                width: 8px;
+                height: 8px;
+                top: 1px;
+                left: 1px;
+                background-color: white;
+                border-radius: 50%;
+                transition: 0.2s;
+                transform: scale(0);
+              }
+            }
+            input:checked + .box::before {
+              transform: scale(1);
+            }
+          }
+        }
+        .price2 {
+          font-family: $font;
+          font-weight: 700;
+          color: white;
+        }
+      }
+      .mass {
+        width: 100%;
+        position: relative;
+        .message {
+          font-family: $font;
+          padding: 5px 15px;
+          padding-right: 50px;
+          width: 270px;
+          height: 35px;
+          margin: 0px 5px;
+          border-color: transparent;
+          color: hsl(276, 100%, 81%);
+          position: relative;
+          bottom: -10px;
+          font-size: 10px;
+          color: hsl(270, 7%, 64%);
+          border-radius: 25px;
+        }
+        &::before {
+          content: "\f138";
+          font-family: "Font Awesome 6 Free";
+          position: absolute;
+          font-weight: 900;
+          font-weight: 900;
+          color: hsl(271, 36%, 24%);
+          left: 86%;
+          top: 39%;
+          z-index: 5;
+          font-size: 25px;
+        }
+      }
+    }
+    .text {
+      max-width: 55%;
+      h1 {
+        font-family: $font;
+        font-size: 35px;
+        font-weight: 600;
+        color: hsl(271, 36%, 24%);
+      }
+      p {
+        font-family: $font;
+        font-size: 16px;
+        line-height: 1.7;
+        font-weight: 400;
+        color: hsl(270, 7%, 64%);
+      }
+    }
+  }
+}
