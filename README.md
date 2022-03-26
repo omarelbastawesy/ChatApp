@@ -2,6 +2,7 @@
 
 this is a challange from frontendmentor .
 its build with HTML & CSS with SASS .
+I use liberary for font icon it's font awesome .
 
 ### live site : https://omarelbastawesy.github.io/ChatApp/
 
